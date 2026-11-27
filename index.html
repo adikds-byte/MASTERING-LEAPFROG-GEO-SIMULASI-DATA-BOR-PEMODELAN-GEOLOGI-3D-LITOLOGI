@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.4 — Pad C Extension &amp; Bendungan Tujuh Bukit</title>
+<title>LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5 — Pad C Extension &amp; Bendungan Tujuh Bukit</title>
 <meta name="description" content="Integrasi Profesional Leapfrog Geo 2026 Implicit 3D Lithology Modeling (FastRBF) &amp; Geotech Borlog Command Centre: 16 Borehole, 17 Test Pit, 9 Lab Material Properties Zone AC, Falling Head &amp; Lugeon Test, Strip Log SVG, Penampang 2D/3D &amp; Laporan Word Otomatis.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23041324'/%3E%3Cpolygon points='32,8 54,20 54,44 32,56 10,44 10,20' fill='%2310b981' opacity='0.85'/%3E%3Crect x='27' y='14' width='10' height='36' rx='3' fill='%23f59e0b'/%3E%3C/svg%3E">
 
@@ -325,7 +325,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
 }
 
 /* ========================================================================= */
-/* SMARTPHONE & MOBILE UX ENHANCEMENTS (v12.4 PRO RESPONSIVE EDITION)        */
+/* SMARTPHONE & MOBILE UX ENHANCEMENTS (v12.5 PRO RESPONSIVE EDITION)        */
 /* ========================================================================= */
 @media (max-width: 768px) {
   html { font-size: 15px; }
@@ -444,7 +444,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
 
 
 /* ========================================================================= */
-/* JARVIS AI SUPER-CHATBOT ANIMATIONS & VISUAL CARDS (v12.4 PRO)             */
+/* JARVIS AI SUPER-CHATBOT ANIMATIONS & VISUAL CARDS (v12.5 PRO)             */
 /* ========================================================================= */
 @keyframes chatCardPop {
   0% { opacity: 0; transform: translateY(12px) scale(0.96); }
@@ -504,7 +504,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
       <span class="bg-sky-900/90 text-sky-200 border border-sky-500/50 px-2.5 py-0.5 rounded font-bold">16 BOREHOLE · 17 TEST PIT · 9 LAB ZONE AC · LUGEON</span>
     </div>
     <h1 class="font-tech text-lg sm:text-2xl md:text-3xl font-black tracking-wider shimmer-text uppercase">
-      LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.4
+      LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5
     </h1>
     <p class="font-mono text-[10.5px] sm:text-xs text-emerald-200/95">
       Pemodelan Geologi 3D Litologi Implicit (FastRBF), Drillhole Desurveying, Strip Log Stratigrafi &amp; Evaluasi Pad C Extension Tujuh Bukit
@@ -634,7 +634,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
               <span class="px-2 py-0.5 rounded bg-sky-900/90 text-sky-200 border border-sky-500/50 text-[10px] font-mono font-bold">16 BOREHOLE · 17 TEST PIT · 9 LAB ZONE AC · 8 WELL</span>
             </div>
             <h1 class="font-tech text-sm sm:text-base md:text-lg font-black tracking-wider uppercase mt-0.5 shimmer-text">
-              LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE <span class="text-amber-400 text-xs" style="-webkit-text-fill-color:#fbbf24">v12.4 PRO</span> — Pemodelan Litologi 3D Implicit &amp; Investigasi Lapangan
+              LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE <span class="text-amber-400 text-xs" style="-webkit-text-fill-color:#fbbf24">v12.5 PRO</span> — Pemodelan Litologi 3D Implicit &amp; Investigasi Lapangan
             </h1>
             <p class="hidden md:block text-[10px] font-mono text-slate-300">
               FastRBF 3D Geological Model &bull; Drillhole Desurveying &bull; Strip Log Stratigrafi SVG &bull; Korelasi Penampang &bull; Lab Zone AC &amp; Backfill &bull; Falling Head &amp; Lugeon &bull; WebGIS &bull; 12 Paket Word
@@ -825,9 +825,14 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
 
           <div id="lfMetricsSummary" class="p-3 rounded-xl bg-slate-950/90 border border-emerald-500/40 space-y-1 text-[10.5px]"></div>
 
-          <button type="button" onclick="switchMainTab('tab02')" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-tech font-black text-xs cursor-pointer shadow-lg">
-            INSPEKSI STRIP LOG 16 BOR &rarr;
-          </button>
+          <div class="grid grid-cols-1 gap-2">
+            <button type="button" onclick="exportTabWord('tab01')" class="w-full py-2 rounded-xl bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-mono font-black text-xs cursor-pointer shadow-md flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-file-word"></i> EKSPOR LAPORAN MODEL 3D (.DOC)
+            </button>
+            <button type="button" onclick="switchMainTab('tab02')" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-tech font-black text-xs cursor-pointer shadow-lg">
+              INSPEKSI STRIP LOG 16 BOR &rarr;
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -841,6 +846,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
           <span class="text-amber-300 font-black uppercase"><i class="fa-solid fa-bore-hole mr-1"></i>Pilih Titik Bor (16 BH):</span>
           <select id="bhSelect" class="inp w-full sm:w-[310px]" onchange="selectBorehole(this.value)"></select>
           <button type="button" onclick="addRunModalOpen()" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-black text-[11px] cursor-pointer"><i class="fa-solid fa-plus mr-1"></i>Tambah Run / Lapisan</button>
+          <button type="button" onclick="exportTabWord('tab02')" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[11px] cursor-pointer shadow-md flex items-center gap-1.5"><i class="fa-solid fa-file-word"></i>Ekspor Strip Log Word (.doc)</button>
         </div>
         <div id="bhMetaBadges" class="flex flex-wrap gap-1.5"></div>
       </div>
@@ -849,7 +855,10 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
         <div class="xl:col-span-7 cmd-card p-4 space-y-2">
           <div class="flex justify-between items-center border-b border-slate-800 pb-1.5">
             <h3 class="font-tech text-xs sm:text-sm font-black text-amber-300">GEOTECHNICAL BOREHOLE LOG (KOLOM STRATIGRAFI SVG &amp; PARAMETER)</h3>
-            <span id="svgHoleBadge" class="pill info">—</span>
+            <div class="flex items-center gap-2 flex-wrap">
+              <span id="svgHoleBadge" class="pill info">—</span>
+              <button type="button" onclick="exportTabWord('tab02')" class="px-2.5 py-1 rounded bg-blue-700 hover:bg-blue-600 text-white font-mono font-bold text-[10px] cursor-pointer"><i class="fa-solid fa-file-word mr-1"></i>Word (.doc)</button>
+            </div>
           </div>
           <div class="md:hidden text-[10.5px] text-amber-300 font-mono mb-1"><i class="fa-solid fa-arrows-left-right mr-1"></i>Geser ke kanan/kiri untuk melihat seluruh kolom Borlog SVG</div>
           <div class="bg-white rounded-xl p-2 overflow-x-auto border-2 border-emerald-500/40 shadow-inner">
@@ -892,6 +901,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
             <button type="button" onclick="renderCrossSection('we')" id="xs_we" class="px-2.5 py-1 rounded bg-amber-500 text-slate-950 font-black text-[10.5px] cursor-pointer">Transek Barat – Timur (Pad C)</button>
             <button type="button" onclick="renderCrossSection('ns')" id="xs_ns" class="px-2.5 py-1 rounded bg-slate-800 text-slate-200 border border-slate-700 font-bold text-[10.5px] cursor-pointer">Transek Utara – Selatan (Pad C)</button>
             <button type="button" onclick="renderCrossSection('dam')" id="xs_dam" class="px-2.5 py-1 rounded bg-slate-800 text-slate-200 border border-slate-700 font-bold text-[10.5px] cursor-pointer">Transek Bendungan Dam 1 – Dam 3 – Dam 5</button>
+            <button type="button" onclick="exportTabWord('tab03')" class="px-3 py-1 rounded bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[10.5px] cursor-pointer shadow"><i class="fa-solid fa-file-word mr-1"></i>Ekspor Korelasi &amp; Fondasi (.doc)</button>
           </div>
         </div>
         <div class="md:hidden text-[10.5px] text-amber-300 font-mono mb-1"><i class="fa-solid fa-arrows-left-right mr-1"></i>Geser ke kanan/kiri untuk melihat seluruh penampang korelasi</div>
@@ -952,7 +962,10 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
       <div class="cmd-card p-4 space-y-2.5 border-t-2 border-t-purple-500">
         <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-800 pb-2">
           <h3 class="font-tech text-xs sm:text-sm font-black text-purple-300"><i class="fa-solid fa-flask-vial mr-1.5"></i>HASIL UJI LABORATORIUM MATERIAL ZONE AC — PAD C EXTENSION STAGE 1 (TM-ZAC-ITPEAR033)</h3>
-          <span class="pill info">ASTM D2216 · D854 · D4318 · D6913 · D698</span>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="pill info">ASTM D2216 · D854 · D4318 · D6913 · D698</span>
+            <button type="button" onclick="exportTabWord('tab04')" class="px-3 py-1 rounded bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[10.5px] cursor-pointer shadow"><i class="fa-solid fa-file-word mr-1"></i>Ekspor Test Pit &amp; Lab AC (.doc)</button>
+          </div>
         </div>
         <div class="overflow-x-auto rounded-xl border border-purple-900/60">
           <table class="eng" id="labZoneAcTable"></table>
@@ -997,7 +1010,10 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div class="cmd-card p-4 space-y-2">
-          <h3 class="font-tech text-xs sm:text-sm font-black text-amber-300 border-b border-slate-800 pb-1.5">TABEL 2.5 · RINGKASAN UJI LUGEON / PACKER TEST (13 BOREHOLE)</h3>
+          <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-800 pb-1.5">
+            <h3 class="font-tech text-xs sm:text-sm font-black text-amber-300">TABEL 2.5 · RINGKASAN UJI LUGEON / PACKER TEST (13 BOREHOLE)</h3>
+            <button type="button" onclick="exportTabWord('tab05')" class="px-3 py-1 rounded bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[10.5px] cursor-pointer shadow"><i class="fa-solid fa-file-word mr-1"></i>Ekspor Laporan Hidrogeologi (.doc)</button>
+          </div>
           <div class="overflow-x-auto rounded-xl border border-emerald-900/60" style="max-height:360px">
             <table class="eng" id="lugeonTable"></table>
           </div>
@@ -1020,7 +1036,10 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
         <div class="cmd-card p-4 space-y-2.5">
           <div class="flex justify-between items-center border-b border-slate-800 pb-2 flex-wrap gap-1">
             <h3 class="font-tech text-xs sm:text-sm font-black text-emerald-300"><i class="fa-solid fa-map-location-dot mr-1.5"></i>WEBGIS 16 BOREHOLE, 17 TEST PIT &amp; 9 SAMPEL LAB ZONE AC</h3>
-            <span class="text-[10px] text-cyan-300">UTM 50S → WGS84 Tujuh Bukit</span>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] text-cyan-300">UTM 50S → WGS84</span>
+              <button type="button" onclick="exportTabWord('tab06')" class="px-2.5 py-1 rounded bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[10px] cursor-pointer shadow"><i class="fa-solid fa-file-word mr-1"></i>Ekspor Spasial (.doc)</button>
+            </div>
           </div>
           <div id="borlogGisMap" class="w-full h-[440px] rounded-xl border border-slate-700 bg-slate-950"></div>
           <div class="flex flex-wrap gap-3 text-[10px] text-slate-300">
@@ -1144,7 +1163,10 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
       <div class="cmd-card p-4 space-y-2.5">
         <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
           <h3 class="font-tech text-xs sm:text-sm font-black text-amber-300"><i class="fa-solid fa-table-list mr-1.5"></i>INVENTARIS LENGKAP 16 TITIK BOREHOLE GEOTEKNIK (KLIK BARIS UNTUK INSPEKSI STRIP LOG)</h3>
-          <input id="bhSearchInp" class="inp" style="width:230px" placeholder="Cari Hole ID / Litologi / Lokasi…" oninput="renderMasterBhTable()">
+          <div class="flex flex-wrap items-center gap-2">
+            <input id="bhSearchInp" class="inp" style="width:210px" placeholder="Cari Hole ID / Litologi / Lokasi…" oninput="renderMasterBhTable()">
+            <button type="button" onclick="exportTabWord('tab07')" class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[10.5px] cursor-pointer shadow"><i class="fa-solid fa-file-word mr-1"></i>Ekspor Inventaris 16 BH (.doc)</button>
+          </div>
         </div>
         <div class="overflow-x-auto rounded-xl border border-emerald-900/60" style="max-height:380px">
           <table class="eng" id="masterBhTable"></table>
@@ -1205,6 +1227,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
                 <button type="button" onclick="filterInstrLayer('all')" id="btnInstAll" class="px-2.5 py-1 rounded bg-emerald-600 text-slate-950 font-black text-[10px] cursor-pointer">Semua (33+)</button>
                 <button type="button" onclick="filterInstrLayer('piezo')" id="btnInstPiezo" class="px-2.5 py-1 rounded bg-slate-800 text-amber-300 border border-amber-500/40 font-bold text-[10px] cursor-pointer">GWL &amp; Piezometer</button>
                 <button type="button" onclick="filterInstrLayer('inclino')" id="btnInstInclino" class="px-2.5 py-1 rounded bg-slate-800 text-rose-300 border border-rose-500/40 font-bold text-[10px] cursor-pointer">Inclinometer &amp; Weir</button>
+                <button type="button" onclick="exportTabWord('tab10')" class="px-3 py-1 rounded bg-gradient-to-r from-blue-700 to-sky-600 hover:brightness-110 text-white font-black text-[10px] cursor-pointer shadow"><i class="fa-solid fa-file-word mr-1"></i>Ekspor Peta Instrumen (.doc)</button>
               </div>
             </div>
 
@@ -1272,7 +1295,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
 
   <!-- FOOTER -->
   <footer class="mt-auto py-3 px-4 bg-slate-950/90 border-t border-emerald-500/30 text-center font-mono text-[10.5px] text-slate-400 no-print">
-    © 2026 <b>LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.4</b> · Dikembangkan oleh <b class="text-amber-300">Ir. Mohamad Hartadi, S.T.</b> · Konsultan: <b class="text-emerald-300">PT. Cipta Harmoni Selaras</b><br>
+    © 2026 <b>LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5</b> · Dikembangkan oleh <b class="text-amber-300">Ir. Mohamad Hartadi, S.T.</b> · Konsultan: <b class="text-emerald-300">PT. Cipta Harmoni Selaras</b><br>
     Blog: <a href="https://newbieonline7.blogspot.com/" target="_blank" rel="noopener" class="text-sky-300 underline">newbieonline7.blogspot.com</a> ·
     Facebook: <a href="https://www.facebook.com/hartadi.kds" target="_blank" rel="noopener" class="text-sky-300 underline">facebook.com/hartadi.kds</a> ·
     WhatsApp: <a href="https://wa.me/6282231036047" target="_blank" rel="noopener" class="text-emerald-300 underline">0822-3103-6047</a>
@@ -1385,7 +1408,7 @@ html:not(.dark) .wr-card { background: #ffffff; border-color: #cbd5e1; }
 
 <script>
 /* ============================================================================
-   LEAPFROG GEO & BORLOG 3D COMMAND CENTRE PRO v12.4 — COMPLETE DATASET & ENGINE
+   LEAPFROG GEO & BORLOG 3D COMMAND CENTRE PRO v12.5 — COMPLETE DATASET & ENGINE
    Data Sinkron dari Google Drive Proyek Tujuh Bukit (Pad C Extension & Dam 1-6A)
    ============================================================================ */
 const $ = id => document.getElementById(id);
@@ -2713,7 +2736,7 @@ function buildSmartWordReport(mode) {
   $('smartReportPaper').innerHTML = `
     <div style="border-bottom:3px solid #0f172a;padding-bottom:10px;display:flex;justify-content:space-between;align-items:flex-start">
       <div>
-        <div style="font-size:10px;font-weight:bold;color:#475569">PT BUMI SUKSESINDO · PT AGRINAS PALMA NUSANTARA / PT CIPTA HARMONI SELARAS · TUJUH BUKIT</div>
+        <div style="font-size:10px;font-weight:bold;color:#475569">PT BUMI SUKSESINDO · PT CIPTA HARMONI SELARAS · TUJUH BUKIT</div>
         <h2 style="font-size:15px;font-weight:900;color:#0f172a;margin:3px 0">${titles[mode]}</h2>
         <div style="font-size:11px;color:#047857;font-weight:bold">PROYEK PERLUASAN HEAP LEACH PAD C EXTENSION (49 Mt) &amp; DECOMMISSIONING DAM 5 &amp; 6A</div>
       </div>
@@ -2737,7 +2760,7 @@ function buildSmartWordReport(mode) {
       <li><b>Permeabilitas &amp; Manajemen Air Permukaan:</b> Uji <i>Falling Head</i> menghasilkan <i>k</i> = <b>1,00×10⁻¹² – 4,92×10⁻⁵ m/s</b> dan uji <i>Packer Lugeon</i> menghasilkan <b>0,014 – 0,308 Lu</b> (kedap air). Saluran pengelak (<i>diversion drain</i>) didesain untuk kala ulang hujan <b>100-tahun (100-yr ARI)</b> dengan kemiringan dasar pad 2% dan lapisan ganda geomembran LLDPE + interlift liner tiap 3 lift (maksimum head freatik 30 m).</li>
       <li><b>Stabilitas Bendungan Dam 5 &amp; 6A:</b> Stabilitas statik memenuhi kriteria aman (FoS 1,959–4,210), gempa OBE aman (FoS 1,239–3,308), deformasi gempa MDE 5,0 cm (&lt; batas 200 cm), dan gradien erosi internal aman (SF 3,07–4,23).</li>
     </ul>
-    <p style="margin-top:14px;font-size:9pt;color:#475569;border-top:1px solid #cbd5e1;padding-top:6px">Disusun melalui LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.4 · <b>Ir. Mohamad Hartadi, S.T.</b> · https://newbieonline7.blogspot.com/ · WA 0822-3103-6047</p>
+    <p style="margin-top:14px;font-size:9pt;color:#475569;border-top:1px solid #cbd5e1;padding-top:6px">Disusun melalui LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5 · <b>Ir. Mohamad Hartadi, S.T.</b> · https://newbieonline7.blogspot.com/ · WA 0822-3103-6047</p>
   `;
 }
 
@@ -2842,14 +2865,14 @@ const WR_PACKAGES = [
 ];
 
 function wrBuildDoc(r) {
-  const cred = '<p style="margin-top:20px;font-size:9pt;color:#475569;border-top:1px solid #cbd5e1;padding-top:8px">Disusun melalui LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.4 &middot; <b>Ir. Mohamad Hartadi, S.T.</b> (Konsultan: PT. Cipta Harmoni Selaras) &middot; https://newbieonline7.blogspot.com/ &middot; WA 0822-3103-6047</p>';
+  const cred = '<p style="margin-top:20px;font-size:9pt;color:#475569;border-top:1px solid #cbd5e1;padding-top:8px">Disusun melalui LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5 &middot; <b>Ir. Mohamad Hartadi, S.T.</b> (Konsultan: PT. Cipta Harmoni Selaras) &middot; https://newbieonline7.blogspot.com/ &middot; WA 0822-3103-6047</p>';
   const kpi = '<table width="100%" cellspacing="6"><tr>' + r.kpi.map(k => `<td align="center" style="background:${k[2]};color:#fff;padding:10px;border-radius:6px"><div style="font-size:8pt">${k[0]}</div><div style="font-size:14pt;font-weight:bold">${k[1]}</div></td>`).join('') + '</tr></table>';
   const flow = '<table width="100%" cellspacing="4"><tr>' + r.flow.map((f, i) => `<td align="center" style="background:#ecfdf5;border:1px solid #059669;padding:7px;font-size:9pt"><b style="color:#047857">${i + 1}.</b><br>${f}</td>`).join('<td align="center" style="color:#059669;font-size:15pt">&rarr;</td>') + '</tr></table>';
   const mx = Math.max(...r.chart.map(c => c[1]), 0.0001);
   const bars = '<table width="100%" cellspacing="2">' + r.chart.map(c => `<tr><td width="26%" style="font-size:9pt">${c[0]}</td><td width="56%"><div style="background:#059669;height:13px;width:${Math.max(4, c[1] / mx * 100)}%">&nbsp;</div></td><td width="18%" style="font-size:9pt"><b>${Number(c[1]).toLocaleString('id-ID')}</b></td></tr>`).join('') + '</table>';
   return `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>${r.t}</title><style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.5;color:#0f172a}h1{color:#064e3b;font-size:17pt;border-bottom:3px solid #10b981;padding-bottom:4px}h2{color:#047857;font-size:12.5pt;margin-top:14px}li{margin-bottom:4px}
 /* ========================================================================= */
-/* SMARTPHONE & MOBILE UX ENHANCEMENTS (v12.4 PRO RESPONSIVE EDITION)        */
+/* SMARTPHONE & MOBILE UX ENHANCEMENTS (v12.5 PRO RESPONSIVE EDITION)        */
 /* ========================================================================= */
 @media (max-width: 768px) {
   html { font-size: 15px; }
@@ -2968,7 +2991,7 @@ function wrBuildDoc(r) {
 
 
 /* ========================================================================= */
-/* JARVIS AI SUPER-CHATBOT ANIMATIONS & VISUAL CARDS (v12.4 PRO)             */
+/* JARVIS AI SUPER-CHATBOT ANIMATIONS & VISUAL CARDS (v12.5 PRO)             */
 /* ========================================================================= */
 @keyframes chatCardPop {
   0% { opacity: 0; transform: translateY(12px) scale(0.96); }
@@ -3070,9 +3093,31 @@ function dlBlob(name, content, type) {
 
 function exportReportToWord() {
   const body = $('smartReportPaper')?.innerHTML || '';
-  const html = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'></head><body style="font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.45">${body}</body></html>`;
+  const nowId = new Date().toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'short' });
+  const html = `<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>Laporan Teknis Pad C Extension</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+  @page { size: A4 portrait; margin: 1.8cm; }
+  body { font-family: 'Calibri', Arial, sans-serif; font-size: 10.5pt; line-height: 1.48; color: #1e293b; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 9pt; }
+  th { background-color: #06283d; color: #ffffff; padding: 6px; border: 1px solid #0f172a; }
+  td { padding: 5px 6px; border: 1px solid #cbd5e1; }
+  tr:nth-child(even) td { background-color: #f8fafc; }
+</style></head>
+<body>
+  <div style="font-size:8.5pt;color:#64748b;text-align:right;margin-bottom:6px;">Dicetak: ${nowId} WIB</div>
+  ${body}
+  <table style="margin-top:18px;border:none;">
+    <tr>
+      <td width="60%" style="border:none;font-size:9pt;color:#475569;">Dokumen Resmi — <b>LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5</b><br/>Blog: https://newbieonline7.blogspot.com/ &middot; WA: 0822-3103-6047</td>
+      <td width="40%" align="center" style="border:none;font-size:9pt;">Disusun Oleh,<br/><br/><br/><b><u>Ir. Mohamad Hartadi, S.T.</u></b><br/>PT. Cipta Harmoni Selaras</td>
+    </tr>
+  </table>
+</body></html>`;
   dlBlob(`LEAPFROG_BORLOG_${STATE.reportMode.toUpperCase()}_TUJUH_BUKIT.doc`, '\ufeff' + html, 'application/msword');
-  toast('Laporan Teknis Word (.doc) berhasil diunduh!');
+  toast('Laporan Teknis Word (.doc) rapi & siap cetak berhasil diunduh!');
 }
 
 function exportToExcel() {
@@ -3701,7 +3746,7 @@ function renderWelcomeChat() {
   b.innerHTML = '';
   botSay(`
     <div class="flex items-center justify-between mb-1.5">
-      <span class="px-2 py-0.5 rounded bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-tech font-black text-[9.5px]">JARVIS AI v12.4 · MULTI-DOMAIN</span>
+      <span class="px-2 py-0.5 rounded bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-tech font-black text-[9.5px]">JARVIS AI v12.5 · MULTI-DOMAIN</span>
       <span class="text-[9.5px] text-amber-300 font-bold"><i class="fa-solid fa-sparkles mr-1"></i>Visual + Wikipedia + AI</span>
     </div>
     <p class="font-sans text-xs text-slate-100 leading-relaxed">
@@ -4088,6 +4133,509 @@ function renderInstMatrixTable(mode = 'all') {
 }
 
 
+
+/* ============================================================================
+   18. PROFESSIONAL EXECUTIVE WORD (.DOC) EXPORT ENGINE FOR ALL TABS (v12.5 PRO)
+   Menghasilkan Dokumen Word Terstruktur Rapi, Berwarna, Dilengkapi Gambar SVG,
+   Tabel Zebra-Striped, Risalah Teknis, Saran Teknis & Kesimpulan Profesional
+   ============================================================================ */
+function svgToPngDataUrl(svgId, outW = 1400, outH = 1100, bg = '#ffffff') {
+  return new Promise(resolve => {
+    try {
+      const svg = $(svgId);
+      if (!svg) return resolve(null);
+      const ser = new XMLSerializer().serializeToString(svg);
+      const blob = new Blob([ser], { type: 'image/svg+xml;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const img = new Image();
+      img.onload = function() {
+        const cv = document.createElement('canvas');
+        cv.width = outW; cv.height = outH;
+        const cx = cv.getContext('2d');
+        cx.fillStyle = bg;
+        cx.fillRect(0, 0, outW, outH);
+        cx.drawImage(img, 0, 0, outW, outH);
+        URL.revokeObjectURL(url);
+        resolve(cv.toDataURL('image/png'));
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); resolve(null); };
+      img.src = url;
+    } catch (e) { resolve(null); }
+  });
+}
+
+function buildProWordShell({ docCode, category, title, subtitle, kpiCards, bodyHtml, risalah, saranList, kesimpulan }) {
+  const nowId = new Date().toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'short' });
+  const kpiHtml = kpiCards && kpiCards.length ? `
+    <table width="100%" cellspacing="6" cellpadding="0" style="margin:10px 0 14px 0;">
+      <tr>
+        ${kpiCards.map(k => `
+          <td width="${Math.floor(100 / kpiCards.length)}%" align="center" style="background:${k.bg};color:#ffffff;padding:10px 8px;border-radius:6px;border:1px solid #0f172a;">
+            <div style="font-size:8pt;text-transform:uppercase;letter-spacing:0.6px;opacity:0.9;">${k.label}</div>
+            <div style="font-size:13pt;font-weight:bold;margin-top:2px;">${k.val}</div>
+            <div style="font-size:7.5pt;opacity:0.85;margin-top:2px;">${k.sub || ''}</div>
+          </td>
+        `).join('')}
+      </tr>
+    </table>
+  ` : '';
+
+  return `<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8">
+<title>${title}</title>
+<!--[if gte mso 9]>
+<xml>
+  <w:WordDocument>
+    <w:View>Print</w:View>
+    <w:Zoom>100</w:Zoom>
+    <w:DoNotOptimizeForBrowser/>
+  </w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+  @page { size: A4 portrait; margin: 1.8cm 1.8cm 1.8cm 1.8cm; }
+  body { font-family: 'Calibri', 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; line-height: 1.48; color: #1e293b; }
+  h1 { font-size: 16pt; color: #06283d; margin: 4px 0; font-weight: bold; }
+  h2 { font-size: 12pt; color: #064e3b; background-color: #ecfdf5; border-left: 5px solid #059669; padding: 6px 10px; margin-top: 16px; margin-bottom: 8px; font-weight: bold; }
+  h3 { font-size: 11pt; color: #0369a1; margin-top: 12px; margin-bottom: 5px; font-weight: bold; }
+  p { margin: 5px 0 8px 0; text-align: justify; }
+  table.data-tbl { width: 100%; border-collapse: collapse; margin: 8px 0 12px 0; font-size: 9pt; }
+  table.data-tbl th { background-color: #06283d; color: #ffffff; font-weight: bold; padding: 6px 6px; border: 1px solid #0f172a; text-align: left; }
+  table.data-tbl td { padding: 5px 6px; border: 1px solid #cbd5e1; vertical-align: top; }
+  table.data-tbl tr:nth-child(even) td { background-color: #f8fafc; }
+  .box-risalah { background-color: #eff6ff; border: 1px solid #bfdbfe; border-left: 5px solid #2563eb; padding: 10px 12px; margin: 8px 0; }
+  .box-saran { background-color: #fffbeb; border: 1px solid #fde68a; border-left: 5px solid #d97706; padding: 10px 12px; margin: 8px 0; }
+  .box-kesimpulan { background-color: #ecfdf5; border: 1px solid #a7f3d0; border-left: 5px solid #059669; padding: 10px 12px; margin: 8px 0; }
+  ul, ol { margin: 4px 0 8px 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+  <!-- KOP / EXECUTIVE BANNER -->
+  <table width="100%" cellspacing="0" cellpadding="0" style="background-color:#06283d;color:#ffffff;border-bottom:4px solid #10b981;margin-bottom:10px;">
+    <tr>
+      <td style="padding:14px 16px;">
+        <div style="font-size:8.5pt;color:#6ee7b7;font-weight:bold;letter-spacing:1px;">PT BUMI SUKSESINDO · PT CIPTA HARMONI SELARAS · TAMBANG EMAS TUJUH BUKIT (BANYUWANGI)</div>
+        <div style="font-size:15pt;font-weight:bold;color:#ffffff;margin:4px 0;">${title}</div>
+        <div style="font-size:9.5pt;color:#e2e8f0;">${subtitle}</div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- METADATA DOKUMEN -->
+  <table width="100%" cellspacing="0" cellpadding="5" style="border-collapse:collapse;font-size:9pt;margin-bottom:10px;border:1px solid #cbd5e1;">
+    <tr>
+      <td width="22%" style="background:#f1f5f9;font-weight:bold;border:1px solid #cbd5e1;">Nomor &amp; Modul</td>
+      <td width="28%" style="border:1px solid #cbd5e1;">${docCode} (${category})</td>
+      <td width="22%" style="background:#f1f5f9;font-weight:bold;border:1px solid #cbd5e1;">Tanggal Cetak</td>
+      <td width="28%" style="border:1px solid #cbd5e1;">${nowId} WIB</td>
+    </tr>
+    <tr>
+      <td style="background:#f1f5f9;font-weight:bold;border:1px solid #cbd5e1;">Lokasi &amp; Proyek</td>
+      <td style="border:1px solid #cbd5e1;">Heap Leach Pad C Extension (+49 Mt) &amp; Dam 1–6A</td>
+      <td style="background:#f1f5f9;font-weight:bold;border:1px solid #cbd5e1;">Sistem Koordinat</td>
+      <td style="border:1px solid #cbd5e1;">UTM (WGS 84) Zone 50S</td>
+    </tr>
+    <tr>
+      <td style="background:#f1f5f9;font-weight:bold;border:1px solid #cbd5e1;">Tenaga Ahli / Dev</td>
+      <td style="border:1px solid #cbd5e1;"><b>Ir. Mohamad Hartadi, S.T.</b></td>
+      <td style="background:#f1f5f9;font-weight:bold;border:1px solid #cbd5e1;">Konsultan Supervisi</td>
+      <td style="border:1px solid #cbd5e1;"><b>PT. Cipta Harmoni Selaras</b></td>
+    </tr>
+  </table>
+
+  ${kpiHtml}
+  ${bodyHtml}
+
+  <h2>RISALAH TEKNIS (TECHNICAL MINUTES)</h2>
+  <div class="box-risalah">${risalah}</div>
+
+  <h2>SARAN TEKNIS &amp; REKOMENDASI REKAYASA</h2>
+  <div class="box-saran">
+    <ol>${saranList.map(s => `<li>${s}</li>`).join('')}</ol>
+  </div>
+
+  <h2>KESIMPULAN</h2>
+  <div class="box-kesimpulan"><b>${kesimpulan}</b></div>
+
+  <!-- BLOK TANDA TANGAN & KREDIT RESMI -->
+  <table width="100%" cellspacing="0" cellpadding="6" style="margin-top:18px;border-top:2px solid #059669;font-size:9pt;color:#475569;">
+    <tr>
+      <td width="62%" valign="top">
+        <b>LEAPFROG GEO &amp; BORLOG 3D COMMAND CENTRE PRO v12.5</b><br/>
+        Sistem Pemodelan Geologi 3D Implicit (FastRBF) &amp; Evaluasi Investigasi Lapangan<br/>
+        Blog: https://newbieonline7.blogspot.com/ &middot; WA: 0822-3103-6047
+      </td>
+      <td width="38%" align="center" valign="top">
+        Disusun &amp; Diverifikasi Oleh:<br/><br/><br/>
+        <b style="color:#0f172a;text-decoration:underline;">Ir. Mohamad Hartadi, S.T.</b><br/>
+        Tenaga Ahli Geoteknik &amp; Keamanan Bendungan<br/>
+        PT. Cipta Harmoni Selaras
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+async function exportTabWord(tabId) {
+  toast('Menyiapkan laporan Word profesional (.doc) untuk ' + tabId.toUpperCase() + '…');
+
+  if (tabId === 'tab02') {
+    const bh = getSelectedBH();
+    const rockRuns = bh.runs.filter(r => r.rqd > 0);
+    const avgRqd = rockRuns.length ? (rockRuns.reduce((a, r) => a + r.rqd, 0) / rockRuns.length) : 0;
+    const avgCr = bh.runs.length ? (bh.runs.reduce((a, r) => a + r.cr, 0) / bh.runs.length) : 0;
+    const svgImg = await svgToPngDataUrl('boreholeSvg', 1260, 1080, '#ffffff');
+    const rockStart = bh.runs.find(r => ['DACITE', 'BRECCIA', 'DIORITE'].includes(r.uscs));
+
+    const bodyHtml = `
+      <h2>1. IDENTITAS &amp; PARAMETER TEKNIS LUBANG BOR (${bh.id} / ${bh.bsiId})</h2>
+      <table class="data-tbl">
+        <tr>
+          <th width="25%">Hole ID (KP / BSI)</th><td width="25%"><b>${bh.id}</b> / <b>${bh.bsiId}</b></td>
+          <th width="25%">Lokasi / Sektor</th><td width="25%">${bh.loc}</td>
+        </tr>
+        <tr>
+          <th>Koordinat Easting (X)</th><td>${fmt(bh.easting, 2)} mE</td>
+          <th>Koordinat Northing (Y)</th><td>${fmt(bh.northing, 2)} mN</td>
+        </tr>
+        <tr>
+          <th>Elevasi Collar</th><td>+${fmt(bh.elev, 2)} mRL</td>
+          <th>Total Kedalaman Bor</th><td><b>${fmt(bh.depth, 1)} m</b></td>
+        </tr>
+        <tr>
+          <th>Muka Air Tanah (GWL)</th><td><b>${fmt(bh.gwl, 2)} m bgs</b> (Min ${fmt(bh.gwlRange.min,2)} – Max ${fmt(bh.gwlRange.max,2)} m)</td>
+          <th>Mesin Bor &amp; Logger</th><td>${bh.rig} (${bh.driller} / ${bh.logger})</td>
+        </tr>
+        <tr>
+          <th>Uji Packer Lugeon</th><td>${bh.lugeon.lu > 0 ? `${bh.lugeon.lu.toFixed(3)} Lu (${bh.lugeon.k} m/s · ${bh.lugeon.flow})` : bh.lugeon.flow}</td>
+          <th>Periode Pengeboran</th><td>${bh.start} s/d ${bh.finish}</td>
+        </tr>
+      </table>
+
+      ${svgImg ? `
+        <h2>2. KOLOM STRATIGRAFI GEOTECHNICAL BOREHOLE LOG (STRIP LOG SVG)</h2>
+        <div style="text-align:center;border:1px solid #cbd5e1;padding:6px;background:#ffffff;">
+          <img src="${svgImg}" width="520" style="max-width:100%;height:auto;" alt="Strip Log ${bh.id}"/>
+          <div style="font-size:8.5pt;color:#475569;margin-top:4px;">Gambar 1. Kolom Stratigrafi Borehole Log, N-SPT, TCR/RQD, dan Elevasi Muka Air Tanah pada ${bh.id} (${bh.bsiId}).</div>
+        </div>
+      ` : ''}
+
+      <h2>3. TABEL DETAIL DRILL RUN, N-SPT, TCR, RQD &amp; DESKRIPSI LITOLOGI</h2>
+      <table class="data-tbl">
+        <thead>
+          <tr>
+            <th>Dari (m)</th><th>Sampai (m)</th><th>Tebal (m)</th><th>USCS / Batuan</th><th>Pelapukan</th><th>N-SPT</th><th>TCR (%)</th><th>RQD (%)</th><th>Sampel / Uji</th><th>Deskripsi Material &amp; Diskontinuitas</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${bh.runs.map(r => `
+            <tr>
+              <td>${fmt(r.f,2)}</td><td>${fmt(r.t,2)}</td><td>${fmt(r.t - r.f,2)}</td>
+              <td><b>${r.uscs}</b></td><td>${r.weath}</td>
+              <td>${r.spt === null ? '—' : (r.spt >= 50 ? 'Refusal (≥50)' : r.spt)}</td>
+              <td>${r.cr}%</td><td><b>${r.rqd}%</b></td><td>${r.sample}</td><td>${r.desc}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+
+    const docHtml = buildProWordShell({
+      docCode: `BORLOG-${bh.bsiId}`,
+      category: 'Tab 02 · Strip Log Stratigrafi & Drill Run',
+      title: `LAPORAN GEOTECHNICAL BOREHOLE LOG — ${bh.id} (${bh.bsiId})`,
+      subtitle: `Profil Stratigrafi Detail, Nilai N-SPT, Core Recovery (TCR), RQD, dan Evaluasi Hidrogeologi ${bh.loc}`,
+      kpiCards: [
+        { label: 'Total Kedalaman', val: `${fmt(bh.depth,1)} m`, sub: `Elev +${fmt(bh.elev,2)} mRL`, bg: '#0891b2' },
+        { label: 'Muka Air Tanah', val: `${fmt(bh.gwl,2)} m`, sub: `Avg ${fmt(bh.gwlRange.avg,2)} m bgs`, bg: '#0284c7' },
+        { label: 'Rata-rata TCR / RQD', val: `${fmt(avgCr,1)}% / ${fmt(avgRqd,1)}%`, sub: 'Kualitas Inti Batuan', bg: '#059669' },
+        { label: 'Permeabilitas Lugeon', val: bh.lugeon.lu > 0 ? `${bh.lugeon.lu.toFixed(3)} Lu` : 'N/A', sub: bh.lugeon.flow, bg: '#d97706' }
+      ],
+      bodyHtml,
+      risalah: `Pada titik bor <b>${bh.id} (${bh.bsiId})</b> sedalam <b>${fmt(bh.depth,1)} m</b>, lapisan penutup (<i>overburden</i>) berupa tanah residual dan material lapuk berkembang dari permukaan hingga kedalaman <b>${rockStart ? fmt(rockStart.f,2) + ' m' : fmt(bh.depth,1) + ' m'}</b>. ${rockStart ? `Batuan dasar <b>${rockStart.uscs}</b> dijumpai mulai elevasi <b>+${fmt(bh.elev - rockStart.f,2)} mRL</b> dengan nilai penetrasi standar mencapai <i>Refusal</i> (N-SPT ≥ 50) dan rata-rata RQD batuan sebesar <b>${fmt(avgRqd,1)}%</b>.` : 'Seluruh profil didominasi endapan koluvial dan tanah residual.'} Hasil uji permeabilitas lapangan mengonfirmasi kondisi hidraulik terkendali pada kedalaman muka air tanah <b>${fmt(bh.gwl,2)} m bgs</b>.`,
+      saranList: [
+        `Lakukan pengupasan (stripping) lapisan permukaan lunak/organik hingga mencapai lapisan tanah kaku (N-SPT ≥ 15) atau zona pelapukan sedang-segar sebelum penghamparan timbunan struktural.`,
+        `Gunakan parameter kuat geser dan modulus elastisitas unit batuan ${rockStart ? rockStart.uscs : 'dasar'} pada elevasi +${rockStart ? fmt(bh.elev - rockStart.f,2) : fmt(bh.elev - bh.depth,2)} mRL sebagai elevasi acuan fondasi struktur utama.`,
+        `Pertahankan pemantauan elevasi muka air tanah secara berkala pada standpipe piezometer ${bh.id} untuk mengevaluasi fluktuasi tekanan air pori selama musim hujan dan tahap penimbunan.`
+      ],
+      kesimpulan: `Titik investigasi ${bh.id} (${bh.bsiId}) memiliki stratigrafi yang terdefinisi jelas dengan kompetensi batuan dasar memadai (N-SPT Refusal ≥ 50) serta permeabilitas rendah sehingga layak mendukung desain konstruksi Pad C Extension & Bendungan Tujuh Bukit.`
+    });
+
+    dlBlob(`Laporan_Borlog_StripLog_${bh.id}_${bh.bsiId}.doc`, '﻿' + docHtml, 'application/msword');
+    toast(`Laporan Word Strip Log ${bh.id} (${bh.bsiId}) berhasil diunduh!`);
+    return;
+  }
+
+  if (tabId === 'tab01') {
+    const dom = LF_DOMAINS[STATE.lfDomain];
+    const totVol = dom.layers.reduce((a, b) => a + b.vol, 0);
+    const bodyHtml = `
+      <h2>1. PARAMETER PEMODELAN GEOLOGI 3D IMPLICIT (FASTRBF ENGINE)</h2>
+      <table class="data-tbl">
+        <tr><th width="30%">Domain Pemodelan Aktif</th><td><b>${dom.name}</b></td></tr>
+        <tr><th>Resolusi Mesh FastRBF</th><td>Grid ${STATE.lfRes.toFixed(1)} m (Isosurface Contact Snapping: ALL DRILLHOLES)</td></tr>
+        <tr><th>Orientasi Struktur &amp; Anisotropi</th><td>Kemiringan Dip ${STATE.lfDip}° · Rasio Ellipsoid ${STATE.lfAniso.toFixed(1)} : 2,0 : 1,0</td></tr>
+        <tr><th>Kontrol Bidang Sesar</th><td>${STATE.lfFault ? 'Aktif — Bidang Sesar GTH-14-126 (Kemiringan 30°)' : 'Non-Aktif'}</td></tr>
+      </table>
+      <h2>2. TABEL VOLUMETRIK &amp; KRONOSTRATIGRAFI UNIT LITOLOGI 3D</h2>
+      <table class="data-tbl">
+        <thead><tr><th>No</th><th>Kode Unit</th><th>Nama Unit Litologi</th><th>Tipe Permukaan</th><th>Tebal Rata-rata (m)</th><th>Volume 3D (Juta m³)</th><th>Massa (Juta Ton)</th></tr></thead>
+        <tbody>
+          ${dom.layers.map((l, i) => `
+            <tr>
+              <td>${i + 1}</td><td><b>${l.code}</b></td><td>${l.name}</td><td>${l.type}</td>
+              <td>${l.thick} m</td><td><b>${fmt(l.vol, 2)}</b></td><td>${fmt(l.vol * dom.sg, 2)}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    const docHtml = buildProWordShell({
+      docCode: 'LF3D-FASTRBF-2026',
+      category: 'Tab 01 · Pemodelan Geologi 3D Implicit (FastRBF)',
+      title: `LAPORAN PEMODELAN GEOLOGI 3D LITOLOGI IMPLICIT — ${dom.name.toUpperCase()}`,
+      subtitle: 'Interpolasi Permukaan Kontak Stratigrafi 3D Berbasis Fast Radial Basis Function (FastRBF) & 16 Data Borehole Tujuh Bukit',
+      kpiCards: [
+        { label: 'Total Lubang Bor', val: '16 BH (631,9 m)', sub: '13 Pad C + 3 Dam', bg: '#059669' },
+        { label: 'Total Volume 3D', val: `${fmt(totVol,2)} Mm³`, sub: `SG Rata-rata ${dom.sg}`, bg: '#0891b2' },
+        { label: 'Volume Galian / Fill', val: '1,70 / 5,50 Mm³', sub: 'Desain Pad C (+49 Mt)', bg: '#d97706' },
+        { label: 'Resolusi Mesh RBF', val: `${STATE.lfRes.toFixed(1)} m`, sub: `Dip ${STATE.lfDip}°`, bg: '#7c3aed' }
+      ],
+      bodyHtml,
+      risalah: `Model geologi 3D implisit mengintegrasikan 16 titik pengeboran ke dalam permukaan kontak kronostratigrafi dengan resolusi grid <b>${STATE.lfRes.toFixed(1)} m</b>. Total volume blok litologi terhitung sebesar <b>${fmt(totVol,2)} Juta m³</b> (setara <b>${fmt(totVol * dom.sg,2)} Juta Ton</b>), di mana batuan dasar kompeten <i>Dacite/Diorite</i> mendominasi lapisan bawah permukaan dan menjadi fondasi utama fasilitas Pad C Extension.`,
+      saranList: [
+        'Gunakan permukaan kontak Top of Bedrock (Dacite HW–MW) hasil ekspor mesh 3D FastRBF sebagai batas elevasi galian stripping.',
+        'Lakukan pembaruan otomatis model 3D setiap kali terdapat penambahan data pengeboran infill atau pemetaan kemajuan galian lapangan.',
+        'Integrasikan zonasi bidang sesar 30° (GTH-14-126) ke dalam model stabilitas lereng 3D untuk memverifikasi faktor keamanan lokal.'
+      ],
+      kesimpulan: 'Model geologi 3D implisit FastRBF memberikan representasi ruang bawah permukaan yang akurat, konsisten secara stratigrafi, dan siap digunakan untuk perencanaan konstruksi maupun evaluasi geoteknik.'
+    });
+    dlBlob(`Laporan_Leapfrog_3D_Implicit_${STATE.lfDomain}.doc`, '﻿' + docHtml, 'application/msword');
+    toast('Laporan Word Model Geologi 3D Implicit berhasil diunduh!');
+    return;
+  }
+
+  if (tabId === 'tab03') {
+    const xsImg = await svgToPngDataUrl('crossSectionSvg', 1440, 600, '#041324');
+    const bodyHtml = `
+      ${xsImg ? `
+        <h2>1. PENAMPANG KORELASI STRATIGRAFI LINTAS BOREHOLE (ELEVASI mRL)</h2>
+        <div style="text-align:center;border:1px solid #cbd5e1;padding:6px;background:#041324;">
+          <img src="${xsImg}" width="530" style="max-width:100%;height:auto;" alt="Cross Section"/>
+        </div>
+      ` : ''}
+      <h2>2. MATRIKS PARAMETER DESAIN GEOTEKNIK PER UNIT LITOLOGI (SNI 8460:2017)</h2>
+      <table class="data-tbl">
+        <thead><tr><th>Unit Stratigrafi</th><th>USCS / Litologi</th><th>N-SPT / RQD</th><th>γ (kN/m³)</th><th>c' (kPa)</th><th>φ' (°)</th><th>Modulus E (MPa)</th></tr></thead>
+        <tbody>
+          <tr><td>Unit 1 · Top Soil &amp; Fill</td><td>OL / CH / CL / GP</td><td>N = 3 – 13</td><td>16,5 – 17,8</td><td>8 – 15</td><td>18° – 24°</td><td>6 – 15</td></tr>
+          <tr><td>Unit 2 · Alluvium &amp; Colluvium</td><td>CL / SC / GC</td><td>N = 4 – 14</td><td>17,2 – 18,5</td><td>12 – 22</td><td>20° – 26°</td><td>10 – 25</td></tr>
+          <tr><td>Unit 3 · Residual Soil</td><td>CL / ML / SC</td><td>N = 10 – 27</td><td>18,0 – 19,2</td><td>18 – 32</td><td>24° – 29°</td><td>18 – 42</td></tr>
+          <tr><td>Unit 4 · Extremely Weathered (XW)</td><td>ML / SP / SC</td><td>N = 25 – 55</td><td>19,0 – 20,5</td><td>25 – 45</td><td>28° – 34°</td><td>40 – 85</td></tr>
+          <tr><td>Unit 5 · Dacite HW – MW</td><td>DACITE (RQD 40–85%)</td><td>Refusal (≥50)</td><td>21,5 – 23,5</td><td>80 – 180</td><td>33° – 38°</td><td>180 – 650</td></tr>
+          <tr><td>Unit 6 · Dacite SW–FR &amp; Diorite</td><td>DACITE / DIORITE</td><td>Refusal (&gt;100)</td><td>24,0 – 26,2</td><td>250 – 600</td><td>38° – 45°</td><td>850 – 2.800</td></tr>
+        </tbody>
+      </table>
+    `;
+    const docHtml = buildProWordShell({
+      docCode: 'GEO-XS-FOUND-2026',
+      category: 'Tab 03 · Korelasi Penampang & Parameter Desain Fondasi',
+      title: 'LAPORAN KORELASI LINTAS BOREHOLE & PARAMETER DESAIN GEOTEKNIK',
+      subtitle: 'Penampang Stratigrafi Elevasi mRL, Korelasi Parameter Mohr-Coulomb & Evaluasi Daya Dukung Fondasi',
+      kpiCards: [
+        { label: 'Unit Geoteknik', val: '6 Unit Lapisan', sub: 'Top Soil s/d Fresh Rock', bg: '#059669' },
+        { label: 'Kuat Geser Batuan', val: "φ' = 38° – 45°", sub: "c' = 250 – 600 kPa", bg: '#0891b2' },
+        { label: 'Modulus Dacite FR', val: '850 – 2.800 MPa', sub: 'SPT Refusal (≥50)', bg: '#d97706' },
+        { label: 'Faktor Keamanan', val: 'SF ≥ 2,5 – 3,0', sub: 'SNI 8460:2017', bg: '#7c3aed' }
+      ],
+      bodyHtml,
+      risalah: 'Korelasi penampang melintang menunjukkan kemenerusan lapisan batuan dasar Dacite di seluruh area Pad C Extension dengan ketebalan lapisan penutup lebih besar pada sektor barat (BH-11_R, BH-12, BH-13_R). Parameter desain geoteknik telah dikalibrasi terhadap data N-SPT, RQD, dan indeks tanah setempat.',
+      saranList: [
+        'Tempatkan fondasi bangunan berat (pondasi telapak atau tiang bor) minimal pada lapisan Extremely Weathered padat (N ≥ 30) atau batuan dasar Dacite HW–SW.',
+        'Terapkan faktor keamanan SF ≥ 3,0 untuk fondasi dangkal dan SF ≥ 2,5 untuk fondasi dalam sesuai SNI 8460:2017.'
+      ],
+      kesimpulan: 'Korelasi penampang dan parameter desain geoteknik 6 unit stratigrafi telah tervalidasi dan siap digunakan dalam analisis stabilitas lereng serta desain fondasi.'
+    });
+    dlBlob('Laporan_Korelasi_Penampang_Desain_Fondasi.doc', '﻿' + docHtml, 'application/msword');
+    toast('Laporan Word Korelasi Penampang & Fondasi berhasil diunduh!');
+    return;
+  }
+
+  if (tabId === 'tab04') {
+    const bodyHtml = `
+      <h2>1. RINGKASAN PENGUJIAN LABORATORIUM MATERIAL ZONE AC (9 LAPORAN)</h2>
+      <table class="data-tbl">
+        <thead><tr><th>No Laporan</th><th>Kode Sampel</th><th>Elev (m)</th><th>USCS</th><th>MC (%)</th><th>Gs</th><th>LL (%)</th><th>PI (%)</th><th>OMC (%)</th><th>MDD (g/cm³)</th></tr></thead>
+        <tbody>
+          ${LAB_ZONE_AC.map(r => `
+            <tr><td><b>${r.rep}</b></td><td>${r.sample}</td><td>${fmt(r.elev,2)}</td><td><b>${r.uscs}</b></td><td>${fmt(r.mc,2)}%</td><td>${fmt(r.gs,2)}</td><td>${fmt(r.ll,2)}%</td><td>${fmt(r.pi,2)}%</td><td>${fmt(r.omc,2)}%</td><td><b>${fmt(r.mdd,3)}</b></td></tr>
+          `).join('')}
+        </tbody>
+      </table>
+      <h2>2. DATA LENGKAP 17 LUBANG UJI / TEST PIT (KP-TP-2025-01 S/D 17)</h2>
+      <table class="data-tbl">
+        <thead><tr><th>Test Pit ID</th><th>Easting</th><th>Northing</th><th>Elev (m)</th><th>Refusal (m)</th><th>Alat</th><th>Profil Stratigrafi Lapangan</th></tr></thead>
+        <tbody>
+          ${TEST_PITS.map(t => `
+            <tr><td><b>${t.id}</b></td><td>${t.e}</td><td>${t.n}</td><td>${fmt(t.elev,1)}</td><td><b>${fmt(t.d,1)} m</b></td><td>${t.mach}</td><td>${t.profile}</td></tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    const docHtml = buildProWordShell({
+      docCode: 'LAB-ZAC-TP17-2026',
+      category: 'Tab 04 · Evaluasi 17 Test Pit & 9 Lab Material Zone AC',
+      title: 'LAPORAN EVALUASI TEST PIT (17 TITIK) & MATERIAL PROPERTIES ZONE AC (9 SAMPEL)',
+      subtitle: 'Karakteristik Indeks Tanah, Klasifikasi USCS, Pemadatan Standar ASTM D698 & Profil Galian Dekat Permukaan',
+      kpiCards: [
+        { label: 'Jumlah Test Pit', val: '17 Lubang Uji', sub: 'Refusal 2,6 – 5,0 m', bg: '#d97706' },
+        { label: 'Uji Lab Zone AC', val: '9 Laporan Lab', sub: 'TM-ZAC-ITPEAR033', bg: '#7c3aed' },
+        { label: 'Rentang MDD', val: '1,514–1,822', sub: 'gram/cm³ (ASTM D698)', bg: '#059669' },
+        { label: 'Rentang OMC', val: '10,03–20,53%', sub: 'Kadar Air Optimum', bg: '#0891b2' }
+      ],
+      bodyHtml,
+      risalah: 'Seluruh 17 lubang uji (test pit) mencapai refusal pada kedalaman 2,6–5,0 m dengan lapisan organik permukaan (OL/OH) setebal 0,1–1,5 m. Hasil uji laboratorium 9 sampel Zone AC menunjukkan dominasi tanah SC, GC, CL, dan GW-GM dengan kepadatan kering maksimum (MDD) hingga 1,822 g/cm³.',
+      saranList: [
+        'Kupas dan pisahkan lapisan top soil organik (OL/OH) ke area penyimpanan khusus untuk keperluan reklamasi pasca-tambang.',
+        'Jaga kadar air pemadatan lapangan pada rentang -2% hingga +2% terhadap OMC dengan target kepadatan minimal ≥ 95% MDD.',
+        'Lakukan koreksi fraksi kerikil/oversize sesuai ASTM D4718 pada pengujian kepadatan lapangan material GC dan GW-GM.'
+      ],
+      kesimpulan: 'Material Zone AC memenuhi persyaratan teknis sebagai material timbunan struktural Pad C Extension apabila dipadatkan sesuai spesifikasi kadar air optimum dan koreksi oversize.'
+    });
+    dlBlob('Laporan_TestPit_17_dan_Lab_Zone_AC.doc', '﻿' + docHtml, 'application/msword');
+    toast('Laporan Word Test Pit & Lab Zone AC berhasil diunduh!');
+    return;
+  }
+
+  if (tabId === 'tab05') {
+    const padBHs = BOREHOLES.filter(b => b.zone === 'padc13');
+    const bodyHtml = `
+      <h2>1. RINGKASAN UJI PACKER LUGEON &amp; PEMANTAUAN MUKA AIR TANAH (13 BOREHOLE)</h2>
+      <table class="data-tbl">
+        <thead><tr><th>Hole ID (KP)</th><th>Hole ID (BSI)</th><th>Elev (m)</th><th>Zona Lugeon</th><th>k Lugeon (m/s)</th><th>Lugeon (Lu)</th><th>Tipe Aliran</th><th>GWL Avg (m)</th></tr></thead>
+        <tbody>
+          ${padBHs.map(b => `
+            <tr>
+              <td><b>${b.id}</b></td><td>${b.bsiId}</td><td>${fmt(b.elev,2)}</td><td>${b.lugeon.zone}</td>
+              <td>${b.lugeon.k}</td><td><b>${b.lugeon.lu > 0 ? b.lugeon.lu.toFixed(3) + ' Lu' : 'N/A'}</b></td>
+              <td>${b.lugeon.flow}</td><td>${fmt(b.gwlRange.avg,2)} m</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    const docHtml = buildProWordShell({
+      docCode: 'HYDRO-LUGEON-FH-2026',
+      category: 'Tab 05 · Evaluasi Hidrogeologi, Falling Head & Lugeon Test',
+      title: 'LAPORAN EVALUASI HIDROGEOLOGI, FALLING HEAD & PACKER LUGEON TEST',
+      subtitle: 'Analisis Konduktivitas Hidrolik (Hvorslev & Bouwer-Rice), Uji Injeksi Lugeon & Fluktuasi Air Tanah Pad C Extension',
+      kpiCards: [
+        { label: 'Uji Falling Head', val: '29 Pengujian', sub: 'k = 1e-12 – 4,92e-5 m/s', bg: '#0891b2' },
+        { label: 'Uji Packer Lugeon', val: '0,014 – 0,308 Lu', sub: '12 BH Diuji (< 1 Lu)', bg: '#059669' },
+        { label: 'Sumur Pemantau', val: '8 Standpipe', sub: 'Geotekstil Tipe A24', bg: '#d97706' },
+        { label: 'Kebutuhan Grout', val: 'Tidak Wajib', sub: 'Massa Batuan Kedap Air', bg: '#7c3aed' }
+      ],
+      bodyHtml,
+      risalah: 'Hasil 29 uji Falling Head (Hvorslev & Bouwer-Rice) dan 12 uji Packer Lugeon menunjukkan konduktivitas hidrolik massa batuan dasar Dacite sangat rendah (0,014–0,308 Lu), sedangkan muka air tanah dangkal terdeteksi pada sektor lembah tengah dan barat (rata-rata 0,46 m pada BH-02_R).',
+      saranList: [
+        'Tidak diperlukan tirai grouting (curtain grouting) sistematis pada batuan dasar Dacite karena seluruh nilai uji Lugeon berada di bawah 0,31 Lu.',
+        'Pasang jaringan drainase bawah permukaan (underdrain Filter F2) di bawah lapisan geomembran LLDPE pada zona muka air tanah dangkal (< 2,5 m).'
+      ],
+      kesimpulan: 'Kondisi hidrogeologi bawah permukaan Pad C Extension tergolong kedap air pada batuan dasar dan terkendali dengan penerapan sistem underdrain pada zona lembah dangkal.'
+    });
+    dlBlob('Laporan_Hidrogeologi_FallingHead_Lugeon.doc', '﻿' + docHtml, 'application/msword');
+    toast('Laporan Word Hidrogeologi & Lugeon berhasil diunduh!');
+    return;
+  }
+
+  if (tabId === 'tab06' || tabId === 'tab07') {
+    const bodyHtml = `
+      <h2>1. INVENTARIS KOORDINAT SPASIAL 16 TITIK BOREHOLE (UTM ZONE 50S)</h2>
+      <table class="data-tbl">
+        <thead><tr><th>Hole ID (KP)</th><th>Hole ID (BSI)</th><th>Lokasi / Sektor</th><th>Easting (mE)</th><th>Northing (mN)</th><th>Elev (mRL)</th><th>Depth (m)</th><th>GWL (m)</th></tr></thead>
+        <tbody>
+          ${BOREHOLES.map(b => `
+            <tr><td><b>${b.id}</b></td><td>${b.bsiId}</td><td>${b.loc}</td><td>${fmt(b.easting,2)}</td><td>${fmt(b.northing,2)}</td><td>+${fmt(b.elev,2)}</td><td>${fmt(b.depth,1)}</td><td>${fmt(b.gwl,2)}</td></tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    const docHtml = buildProWordShell({
+      docCode: 'GIS-INVENTORY-16BH',
+      category: tabId === 'tab06' ? 'Tab 06 · Pemetaan WebGIS & Kondisi Hidrometeorologi' : 'Tab 07 · Database Terpadu & Inventaris 16 Borehole',
+      title: 'LAPORAN INVENTARIS SPASIAL WEBGIS 16 BOREHOLE & DATA INVESTIGASI TUJUH BUKIT',
+      subtitle: 'Rekapitulasi Koordinat Terkalibrasi UTM Zone 50S, Elevasi Topografi & Status Integrasi Data Lapangan',
+      kpiCards: [
+        { label: 'Total Borehole', val: '16 Titik Bor', sub: 'Total 631,9 Meter', bg: '#059669' },
+        { label: 'Total Test Pit', val: '17 Lubang Uji', sub: 'Refusal 2,6–5,0 m', bg: '#d97706' },
+        { label: 'Lab Zone AC', val: '9 Sampel Uji', sub: 'Stage 1 Pad C Ext', bg: '#7c3aed' },
+        { label: 'Sistem Koordinat', val: 'UTM Zone 50S', sub: 'WGS 84 Banyuwangi', bg: '#0891b2' }
+      ],
+      bodyHtml,
+      risalah: 'Seluruh 16 lubang bor, 17 test pit, dan 9 sampel laboratorium Zone AC telah terpetakan dalam satu sistem referensi koordinat tunggal UTM Zone 50S sehingga menjamin konsistensi lintas disiplin antara tim geologi, geoteknik, hidrogeologi, dan konstruksi.',
+      saranList: [
+        'Gunakan basis koordinat UTM Zone 50S yang sama untuk seluruh pemetaan kemajuan konstruksi (as-built survey) dan pemasangan instrumen pemantauan.',
+        'Pantau radar cuaca Windy.com secara berkala untuk mengatur jadwal penghamparan tanah berbutir halus saat curah hujan tinggi.'
+      ],
+      kesimpulan: 'Basis data spasial investigasi lapangan Pad C Extension dan Bendungan Tujuh Bukit telah terintegrasi penuh dan siap digunakan.'
+    });
+    dlBlob('Laporan_Inventaris_Spasial_16_Borehole_TujuhBukit.doc', '﻿' + docHtml, 'application/msword');
+    toast('Laporan Word Inventaris Spasial 16 Borehole berhasil diunduh!');
+    return;
+  }
+
+  if (tabId === 'tab10') {
+    const bodyHtml = `
+      <h2>1. MATRIKS PENEMPATAN INSTRUMEN &amp; ALASAN PEMILIHAN LOKASI (PAD C EXT &amp; DAM 5/6A)</h2>
+      <table class="data-tbl">
+        <thead><tr><th>Kode Instrumen</th><th>Jenis Instrumen</th><th>Koordinat UTM 50S</th><th>Elev (m)</th><th>Status</th><th>Alasan Teknis Pemilihan Lokasi</th></tr></thead>
+        <tbody>
+          ${INST_STATIONS.map(st => `
+            <tr>
+              <td><b>${st.code}</b></td><td>${st.label}</td><td>${fmt(st.e,1)}, ${fmt(st.n,1)}</td>
+              <td>+${fmt(st.elev,1)}</td><td><b>${st.status}</b></td><td>${st.reason}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+    const docHtml = buildProWordShell({
+      docCode: 'INST-PADC-2026',
+      category: 'Tab 10 · Rencana & Peta Instrumentasi Geoteknik-Hidrogeologi',
+      title: 'LAPORAN TEKNIS PEMASANGAN INSTRUMEN PEMANTAUAN — PAD C EXTENSION & DAM 5/6A',
+      subtitle: 'Penjelasan Sistem Instrumentasi, Sinkronisasi Koordinat Peta, Alasan Pemilihan Lokasi, Saran Teknis & Kesimpulan',
+      kpiCards: [
+        { label: 'Standpipe Piezometer', val: '8 Unit Aktif', sub: 'Filter Geotekstil A24', bg: '#059669' },
+        { label: 'Inclinometer Lereng', val: '2 Titik Kritis', sub: 'Sesar 30° & Lereng Barat', bg: '#e11d48' },
+        { label: 'V-Notch Weir & NTU', val: '2 Titik Hilir', sub: 'Ambang Batas < 5 NTU', bg: '#0284c7' },
+        { label: 'Head Freatik Maks', val: '≤ 30,0 m', sub: 'Interlift Liner Tiap 3 Lift', bg: '#d97706' }
+      ],
+      bodyHtml,
+      risalah: 'Sistem instrumentasi Pad C Extension dirancang untuk mengawasi empat zona kritis: (1) sektor barat dengan lapisan fill dan aluvium tebal hingga 10,5 m (PZ-05, PZ-06, PZ-07, INC-02), (2) koridor decommissioning Dam 5 & 6A termasuk zona sesar 30° pada GTH-14-126 (INC-01, PZ-04), (3) zona air tanah dangkal rata-rata 0,46 m pada BH-02_R (PZ-01, PZ-02, PZ-03, PZ-08), serta (4) kaki lereng dan saluran hilir SWP/Dam 3 menggunakan V-Notch Weir dan turbidimeter (< 5 NTU).',
+      saranList: [
+        'Pasang standpipe/VW piezometer dan inclinometer secara bertahap sebelum penimbunan lift berikutnya, serta pastikan penetrasi pada geomembran LLDPE menggunakan boot seal kedap air yang teruji vakum/spark test.',
+        'Gunakan segel bentonit kedap air di atas gravel pack agar tidak terjadi kebocoran vertikal antar lapisan akuifer.',
+        'Lindungi headbox instrumen dengan casing baja pelindung dan patok visibilitas tinggi dari lalu lintas ADT 40T, dengan pembacaan harian saat penimbunan aktif/hujan lebat.',
+        'Terapkan Trigger Action Response Plan (TARP) berbasis ambang batas hijau–kuning–merah untuk tekanan air pori, laju pergeseran inclinometer, dan kekeruhan V-Notch Weir.'
+      ],
+      kesimpulan: 'Penempatan instrumen geoteknik dan hidrogeologi yang terarah pada zona timbunan tebal barat, koridor Dam 5 & 6A, area air tanah dangkal, serta toe hilir memberikan sistem peringatan dini yang andal dan terukur selama konstruksi maupun operasi Pad C Extension (+49 Mt).'
+    });
+    dlBlob('Laporan_Rencana_Peta_Instrumen_PadC_Ext.doc', '﻿' + docHtml, 'application/msword');
+    toast('Laporan Word Peta Instrumen Pad C Ext berhasil diunduh!');
+    return;
+  }
+
+  // Fallback for tab08 / tab09
+  exportReportToWord();
+}
+
+
 /* 16. BOOTSTRAP INITIALIZATION */
 window.addEventListener('DOMContentLoaded', () => {
   updateClock();
@@ -4104,7 +4652,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (p === 75) $('bootStage').textContent = 'Mengkalibrasi Strip Log SVG, Lugeon, WebGIS & 12 Word…';
     if (p >= 100) {
       clearInterval(iv);
-      $('bootStage').textContent = 'LEAPFROG GEO & BORLOG 3D COMMAND CENTRE PRO v12.4 Siap.';
+      $('bootStage').textContent = 'LEAPFROG GEO & BORLOG 3D COMMAND CENTRE PRO v12.5 Siap.';
       setTimeout(() => { if (!holdBoot) dismissLoadingScreen(); }, 2200);
     }
   }, 300);
